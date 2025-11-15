@@ -77,9 +77,13 @@ Create an isolated Python environment.
     python usblink.py run
 
 **Expected Output:**
+
 [+] Monitoring USB devices...
+
 [+] Device detected: Kingston USB 3.0
+
 [!] Suspicious device flagged: Unknown Vendor ID
+
 Report saved: report_YYYY-MM-DD.txt
 
 -------------------------------------------------------------------------------
