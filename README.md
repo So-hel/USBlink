@@ -1,92 +1,125 @@
-USBlink README
--------------------
-
 <div align="center">
 
 # 🔗 USBlink  
 ### A Modular Python Toolkit for USB Threat Detection, BadUSB Analysis & Device Security
 
-[Python 3.10+]
-[MIT License]
-[Windows | Linux]
-[Active Development]
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)]()
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
 </div>
 
----
+-------------------------------------------------------------------------------
+## 🧭 Overview
+USBlink is a lightweight, security‑focused Python framework used to detect, 
+monitor, and analyze suspicious USB activity in real time. It demonstrates 
+practical cybersecurity concepts such as BadUSB detection, device forensics, 
+and system monitoring — making it ideal for VAPT students and recruiter demos.
+-------------------------------------------------------------------------------
 
-USBlink is a lightweight, security-focused Python framework designed to detect suspicious USB activity in real time.  
-It helps identify BadUSB attacks, unauthorized devices, and unusual file transfers — making it ideal for cybersecurity students, VAPT learners, and technical recruiters.
+## 🚀 Features (Premium Overview)
 
----
+### 1️⃣ Real‑Time USB Monitoring  
+     Detect and log every USB device that connects.
 
-## 🚀 What USBlink Offers
+### 2️⃣ BadUSB Detection  
+     Identify spoofed devices, unknown vendors, and anomalies.
 
-- Real-Time USB Monitoring  
-- BadUSB Heuristics Engine  
-- File Activity Observation  
-- Automated Report Generation  
-- Modular Architecture  
-- CLI-Based Execution  
+### 3️⃣ File Activity Observation  
+     Watch for unusual or suspicious file transfers.
 
----
+### 4️⃣ Automated Report Generation  
+     Clean, timestamped reports saved in the `/reports` folder.
 
+### 5️⃣ Modular Architecture  
+     Add custom scanners easily inside `modules/`.
+
+### 6️⃣ CLI Execution  
+     Perfect for demos, labs, and interviews.
+
+-------------------------------------------------------------------------------
 ## 🛠️ Installation & Setup
 
-1️⃣ Clone the repository  
-git clone https://github.com/Hell-Mava/USBlink.git
+### 1️⃣ Clone the Repository
+    Download the project from GitHub.
 
-2️⃣ Move into the project folder  
-cd USBlink
+    git clone https://github.com/Hell-Mava/USBlink.git
 
-3️⃣ Create a virtual environment  
-python -m venv venv
+### 2️⃣ Move Into the Project Directory
+    Navigate into the USBlink folder.
 
-4️⃣ Activate the virtual environment  
-Linux/macOS:  
-source venv/bin/activate  
-Windows:  
-venv\Scripts\activate
+    cd USBlink
 
-5️⃣ Install dependencies  
-pip install -r requirements.txt
+### 3️⃣ Create a Virtual Environment
+    Create an isolated Python environment.
 
----
+    python -m venv venv
 
+### 4️⃣ Activate the Virtual Environment
+    Linux / macOS:
+        source venv/bin/activate
+
+    Windows:
+        venv\Scripts\activate
+
+### 5️⃣ Install All Dependencies
+    Install all required packages.
+
+    pip install -r requirements.txt
+
+-------------------------------------------------------------------------------
 ## ▶️ Running USBlink
 
-python usblink.py run
+### 1️⃣ Start the Tool
+    Launch the main script.
 
-Example output:
+    python usblink.py run
 
-[+] Monitoring USB devices...  
-[+] Device detected: Kingston USB 3.0  
-[!] Suspicious device flagged: Unknown Vendor ID  
-Report saved: report_2025-11-15.txt
+Expected Output:
+    [+] Monitoring USB devices...
+    [+] Device detected: Kingston USB 3.0
+    [!] Suspicious device flagged: Unknown Vendor ID
+    Report saved: report_YYYY-MM-DD.txt
 
----
+-------------------------------------------------------------------------------
+## 📂 Project Structure
 
+USBLINK/
+│── usblink.py          → Main execution script  
+│── modules/            → Detection & scanning modules  
+│── utils/              → Helper utilities  
+│── reports/            → Auto‑generated reports  
+│── requirements.txt    → Dependencies  
+│── README.md           → Documentation  
+
+-------------------------------------------------------------------------------
 ## 📌 Why This Project Is Useful
 
-- Great for students learning cybersecurity  
-- Useful for VAPT practice  
-- Shows real detection logic to recruiters  
-- Demonstrates hardware-level threat awareness  
+### 🎓 For Students  
+     Real hands‑on cybersecurity + Python experience.
 
----
+### 👔 For Recruiters  
+     Demonstrates practical detection logic and modular design.
 
+### 🛡️ For VAPT Practice  
+     Helps understand hardware‑level attack vectors.
+
+### 🧪 For Labs  
+     Good base for training environments and research.
+
+-------------------------------------------------------------------------------
 ## 📜 License
+This project is licensed under the **MIT License**.
 
-This project is licensed under the MIT License.
-
----
-
+-------------------------------------------------------------------------------
 ## 👨‍💻 Author
-
-Sohel Shaik  
+**Sohel Shaik**  
 GitHub: Hell-Mava  
-Email: 1914sohel@gmail.com
+Email: 1914sohel@gmail.com  
 
----
-
-USBlink — A small tool with strong defensive potential.
+-------------------------------------------------------------------------------
+<div align="center">
+✨ USBlink — Small Tool. Strong Defense. Professional Impact. ✨
+</div>
+-------------------------------------------------------------------------------
