@@ -13,22 +13,22 @@
 ---
 
 USBlink is a **lightweight, security-focused Python framework** designed to detect suspicious USB activity in real time.  
-It provides a hands-on demonstration of **BadUSB detection, device monitoring, file anomaly analysis, and automated reporting** — making it a powerful project for **cybersecurity students, VAPT learners, and recruiters evaluating practical skills**.
+It provides a hands-on demonstration of **BadUSB detection, device monitoring, file anomaly analysis, and automated reporting**, making it a powerful project for **cybersecurity students, VAPT learners, and recruiters evaluating practical skills**.
 
-This project showcases real-world concepts used in **digital forensics, endpoint security, and hardware threat analysis**, presented in a clean and modular structure.
+This project showcases real-world concepts used in **digital forensics, endpoint security, and hardware threat analysis**, delivered in a clean, modular structure.
 
 ---
 
 ## 🚀 What USBlink Offers
 
-- 🔍 **Real-Time USB Monitoring** — Detect device connections instantly.  
-- 🛡️ **BadUSB Heuristics Engine** — Flags spoofed or suspicious devices.  
-- 📂 **File Activity Observation** — Watch USB file transfers for anomalies.  
-- 📊 **Automated Reports** — Clean, timestamped reports for evidence or demos.  
-- ⚙️ **Modular Architecture** — Easily extend the project with new modules.  
-- 🖥️ **CLI-Based Execution** — Simple command for interviews & practical tests.
+- 🔍 **Real-Time USB Monitoring** — Detect device connections instantly  
+- 🛡️ **BadUSB Heuristics Engine** — Flags spoofed or suspicious devices  
+- 📂 **File Activity Observation** — Watch USB file transfers for anomalies  
+- 📊 **Automated Reports** — Timestamped logs saved to `/reports`  
+- ⚙️ **Modular Architecture** — Add scanners easily inside `modules/`  
+- 🖥️ **CLI-Based Execution** — Simple command for interviews & labs  
 
-USBlink is intentionally built to be **clean, readable, and recruiter-ready**, showcasing both your Python skills and cybersecurity knowledge.
+USBlink is built to be **clean, readable, and recruiter-ready**.
 
 ---
 
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 bash
 Copy code
 python usblink.py run
-Typical output:
+Example output:
 
 yaml
 Copy code
@@ -59,8 +59,6 @@ Copy code
 [+] Device detected: Kingston USB 3.0
 [!] Suspicious device flagged: Unknown Vendor ID
 Report saved: report_2025-11-15.txt
-This makes USBlink perfect for interview demos and lab assignments.
-
 📂 Repository Structure
 bash
 Copy code
@@ -72,29 +70,19 @@ USBLINK/
 │── requirements.txt    # Dependencies
 │── README.md           # Documentation
 │── .gitignore          # Ignored files
-The structure is modular, making it easy to add:
-
-new scanners
-
-custom detection rules
-
-OS-specific handlers
-
-log analysis tools
-
 📌 Why This Project Is Useful
-🎓 For Students: Practical, demonstrable cybersecurity project.
+🎓 Students: Hands-on cybersecurity experience
 
-👔 For Recruiters: Shows real-world detection logic and Python skill.
+👔 Recruiters: Demonstrates real detection logic
 
-🧪 For Security Labs: Works as a starting point for device monitoring setups.
+🧪 Labs: Useful for monitoring & USB security testing
 
-🛡️ For VAPT Learners: Helps understand USB-based attack vectors.
+🛡️ VAPT Learners: Understand USB-based attack vectors
 
-USBlink balances simplicity + professionalism, making it an ideal portfolio project.
+USBlink focuses on real-world defensive concepts, making it a strong portfolio project.
 
 📜 License
-Licensed under the MIT License — free to use, modify, and share with proper attribution.
+This project is licensed under the MIT License.
 
 👨‍💻 Author
 Sohel Shaik
