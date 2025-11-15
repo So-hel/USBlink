@@ -1,7 +1,10 @@
+USBlink README
+-------------------
+
 <div align="center">
 
 # 🔗 USBlink  
-### **A Modular Python Toolkit for USB Threat Detection, BadUSB Analysis & Device Security**
+### A Modular Python Toolkit for USB Threat Detection, BadUSB Analysis & Device Security
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-green.svg)]()
@@ -11,48 +14,84 @@
 </div>
 
 ---
-USBlink is a **lightweight, security-focused Python framework** designed to detect suspicious USB activity in real time.  
-It provides a hands-on demonstration of **BadUSB detection, device monitoring, file anomaly analysis, and automated reporting**, making it a powerful project for **cybersecurity students, VAPT learners, and recruiters evaluating practical skills**.
 
-This project showcases real-world concepts used in **digital forensics, endpoint security, and hardware threat analysis**, delivered in a clean, modular structure.
+USBlink is a lightweight, security-focused Python framework designed to detect suspicious USB activity in real time.  
+It helps identify BadUSB attacks, unauthorized devices, and unusual file transfers — making it ideal for cybersecurity students, VAPT learners, and technical recruiters.
 
 ---
+
 ## 🚀 What USBlink Offers
 
-- 🔍 **Real-Time USB Monitoring** — Detect device connections instantly  
-- 🛡️ **BadUSB Heuristics Engine** — Flags spoofed or suspicious devices  
-- 📂 **File Activity Observation** — Watch USB file transfers for anomalies  
-- 📊 **Automated Reports** — Timestamped logs saved to `/reports`  
-- ⚙️ **Modular Architecture** — Add scanners easily inside `modules/`  
-- 🖥️ **CLI-Based Execution** — Simple command for interviews & labs  
-
-USBlink is built to be **clean, readable, and recruiter-ready**.
+- Real-Time USB Monitoring  
+- BadUSB Heuristics Engine  
+- File Activity Observation  
+- Automated Report Generation  
+- Modular Architecture  
+- CLI-Based Execution  
 
 ---
+
 ## 🛠️ Installation & Setup
 
-Clone the repository and set up your environment:
-
-```bash
 git clone https://github.com/Hell-Mava/USBlink.git
 cd USBlink
 
 python -m venv venv
-
-# Linux / macOS
-source venv/bin/activate
-
-# Windows
-venv\Scripts\activate
+source venv/bin/activate   # Linux/macOS
+venv\Scripts\activate      # Windows
 
 pip install -r requirements.txt
 
 ---
-#Running USBlink
+
+## ▶️ Running USBlink
+
 python usblink.py run
+
+Example output:
 
 [+] Monitoring USB devices...
 [+] Device detected: Kingston USB 3.0
 [!] Suspicious device flagged: Unknown Vendor ID
 Report saved: report_2025-11-15.txt
+
 ---
+
+## 📂 Repository Structure
+
+USBLINK/
+│── usblink.py
+│── modules/
+│── utils/
+│── reports/
+│── requirements.txt
+│── README.md
+
+---
+
+## 📌 Why This Project Is Useful
+
+- Great for students learning cybersecurity  
+- Useful for VAPT practice  
+- Shows real detection logic to recruiters  
+- Demonstrates hardware-level threat awareness  
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Sohel Shaik  
+GitHub: Hell-Mava  
+Email: 1914sohel@gmail.com
+
+---
+
+<div align="center">
+✨ USBlink — A small tool with strong defensive potential. ✨
+</div>
